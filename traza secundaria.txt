@@ -1,0 +1,30 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+int i,j,S=0;
+int n;
+cout<<"ingrese el valor de n"<<endl;
+cin>>n;
+int A[n][n];
+for(i=0;i<n;i++)
+{
+    for(j=0;j<n;j++)
+    {
+        cin>>A[i][j];
+    }
+}
+for(i=0;i<n;i++)
+{
+    for(j=0;j<n;j++)
+    {
+        cout<<A[i][j];
+        if(i+j==n-1){
+            S=S+A[i][j];
+        }
+    }
+  cout<<endl;
+}
+cout<<"LA SUMA DE LA TRAZA SECUNDARIA ES:"<<endl<<S;
+return 0;
+}
