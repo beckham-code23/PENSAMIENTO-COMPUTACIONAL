@@ -1,0 +1,54 @@
+#include<iostream>
+using namespace std;
+int main(){
+  int i, j;
+  char L[4][4],U[4][4];
+  for(i=0;i<4;i++){
+  for(j=0;j<4;j++){
+    L[i][j]=' ';
+  }
+  }
+  for(i=0;i<4;i++){
+        L[i][0]='*';
+
+  }
+  for(j=0;j<4;j++){
+    L[3][j]='*';
+
+  }
+  for(i=0;i<4;i++){
+    for(j=0;j<4;j++){
+        U[i][j]=' ';
+    }
+  }
+ for(i=0;i<4;i++){
+        U[i][0]='*';
+
+  }
+  for(j=0;j<4;j++){
+    U[3][j]='*';
+  }
+  for(i=0;i<4;i++){
+    U[i][3]='*';
+  }
+
+
+
+  for(i=0;i<4;i++){
+    for(j=0;j<4;j++){
+        cout<<L[i][j];
+    }
+    cout<<endl;
+  }
+  cout<<endl;
+
+   for(i=0;i<4;i++){
+    for(j=0;j<4;j++){
+        cout<<U[i][j];
+    }
+    cout<<endl;
+  }
+
+
+
+}
