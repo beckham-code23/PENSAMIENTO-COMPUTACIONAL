@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a=3, b=5, *pa=&a, *pb=&b, temp;
+    cout<<a<<endl;
+    cout<<b<<endl;
+    temp=*pb;
+    *pb=*pa;
+    *pa=temp;
+
+    cout<<"Valor de a: "<<a<<endl;
+    cout<<"Valor de b: "<<b<<endl;
+return 0;
+}
